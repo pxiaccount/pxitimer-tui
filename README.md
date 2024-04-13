@@ -12,6 +12,8 @@ pxitimer is a timer program which contains many functions (Functions are current
 ##### Installation
 
 ```
+git clone https://github.com/pxiaccount/pxitimer.git
+cd pxitimer
 chmod +x main.sh
 ./main.sh
 ```
