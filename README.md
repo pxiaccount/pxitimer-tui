@@ -1,7 +1,7 @@
-# ptimer
+# pxitimer
 
 ## About
-Ptimer is a timer program which contains many functions (Functions are currently developing)
+pxitimer is a timer program which contains many functions (Functions are currently developing)
 ** This software may contains bugs. But I'll try to fix it as soon as possible
 
 ## Installation
