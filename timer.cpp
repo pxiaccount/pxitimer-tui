@@ -131,7 +131,7 @@ int main() {
 	this_thread::sleep_for(chrono::milliseconds(1000));
 	full--;
 	if (full >= 10 && hInt >= 10) {
-	  cout << hInt-1 << ":" << full << endl;
+	  cout << hInt-1 << ":" << fu << endl;
 	}
 	if (full >= 10 && mInt < 10) {
 	  cout << "0" << mInt-1 << ":" << full << endl;
