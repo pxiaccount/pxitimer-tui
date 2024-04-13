@@ -4,6 +4,7 @@
 #include <string>
 #include <chrono>
 #include <thread>
+#include <stdlib.h>
 using namespace std;
 
 bool checkfile (string name) {
@@ -25,31 +26,31 @@ int main() {
   minutes = checkfile(minutes_txt);
   hours = checkfile(hours_txt);
   string sData, mData, hData;
-  cout << seconds << endl;
-  cout << minutes << endl;
-  cout << hours << endl;
+  //cout << seconds << endl;
+  //cout << minutes << endl;
+  //cout << hours << endl;
   string content;
 
   // get data from file
   if (seconds == 1) {
     while (getline(read_s, content)) {
       sData = content;
-      cout << sData << endl;
+      //cout << sData << endl;
     }
   } else if (minutes == 1) {
     while (getline(read_m, content)) {
       mData = content;
-      cout << mData << endl;
+      //cout << mData << endl;
     }
   } else if (hours == 1) {
     while (getline(read_h, content)) {
       hData = content;
-      cout << hData << endl;
+      //cout << hData << endl;
     }
   } else {
     while (getline(read_m, content)) {
       mData = content;
-      cout << mData << endl;
+      //cout << mData << endl;
     }
   }
   read_s.close();
@@ -80,7 +81,11 @@ int main() {
     int full = 60;
     int min = 60;
     if (seconds == 1) {
-      cout << "00" << ":" << sInt << endl; 
+      if (sInt > 10) {
+	cout << "00" << ":" << sInt << endl;
+      } else {
+	cout << "00" << ":0" << sInt << endl;
+      }
       for (int i=final_time+59;i>=0;i--) {
 	this_thread::sleep_for(chrono::milliseconds(1000));
 	sInt--;
@@ -158,14 +163,30 @@ int main() {
 	}
       }
     } else {
-      cout << mInt << ":" << "00";
-      for (int i=mInt;i>=0;i--) {
-	this_thread::sleep_for(std::chrono::milliseconds(1000));
-	full--;
-	cout << mInt << ":" << full;
+       if ( mInt < 10) {
+	  cout << "0" << mInt << ":" << "00" << endl;
+	} else {
+	  cout << mInt << ":" << "00" << endl;
+	}
+      
+      for (int i=final_time+59;i>=0;i--) {
+	this_thread::sleep_for(chrono::milliseconds(1000));
+	full -= 1;
+	if (full >= 10 && mInt >= 10) {
+	  cout << mInt-1 << ":" << full << endl;
+	}
+	if (full >= 10 && mInt < 10) {
+	  cout << "0" << mInt-1 << ":" << full << endl;
+	}
+	if (full < 10 && mInt < 10) {
+	  cout << "0" << mInt-1 << ":" << "0" << full << endl;
+	}
 	if (full == 0) {
 	  full = 60;
 	  mInt -= 1;
+	}
+	if (mInt == 0) {
+	  break;
 	}
       }
     }
