@@ -27,5 +27,6 @@ yes just simply insert like that. <br>
 code for customization
 1. hours
 2. minutes
-3. hours
+3. seconds
+<br>
 or if you don't insert anything program will automatically give you a minutes format.
