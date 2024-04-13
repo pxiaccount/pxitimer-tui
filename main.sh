@@ -22,4 +22,4 @@ else
 fi
 clear
 echo "$time $config_time"
-g++  timer.cpp -o timer && ./timer
+./timer

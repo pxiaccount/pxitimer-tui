@@ -2,6 +2,8 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <chrono>
+#include <thread>
 using namespace std;
 
 bool checkfile (string name) {
@@ -75,5 +77,19 @@ int main() {
 
     cout << final_time << endl;
 
-    
+    int full = 60;
+    if (seconds == 1) {
+      cout << sInt << ":" << "00";
+      for (int i=sInt;i>=0;i--) {
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
+	full--;
+	cout << sInt << ":" << full;
+      }
+    } else if (minutes == 1) {
+      final_time = mInt * 60;
+    } else if (hours == 1) {
+      final_time = hInt * 60 * 60;
+    } else {
+      final_time = mInt * 60;
+    }
 }
