@@ -1,5 +1,6 @@
 #!/bin/bash
 
+g++ check.cpp -o check && ./check
 clear
 echo "You can config more in ./custom folder"
 config_time=`cat ./custom/time.txt`

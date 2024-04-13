@@ -76,7 +76,7 @@ int main() {
       final_time = mInt * 60;
     }
 
-    cout << final_time << endl;
+    //cout << final_time << endl;
 
     int full = 60;
     int min = 60;

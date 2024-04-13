@@ -15,3 +15,17 @@ Ptimer is a timer program which contains many functions (Functions are currently
 chmod +x main.sh
 ./main.sh
 ```
+
+##### Configuration / Customization
+You can custom format of time (hours/minutes/seconds) in ./custom/time.txt just simply insert format (with s) <br>
+example:
+time.txt
+```
+hours
+```
+yes just simply insert like that. <br>
+code for customization
+1. hours
+2. minutes
+3. hours
+or if you don't insert anything program will automatically give you a minutes format.
