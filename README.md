@@ -8,8 +8,21 @@ pxitimer is a timer program which contains many functions (Functions are current
 
 ##### Dependency
 - GCC compiler
+- git (Optionally)
 
 ##### Installation
+
+You can install by using git or just download the project and install it
+
+##### 1. Install by download from project <br>
+
+1. Download the project
+2. Extract files
+3. Change directory to your project
+4. <code>chmod +x main.sh</code>
+5. <code>chmod +x main.sh</code>
+
+##### 2. Install using git
 
 ```
 git clone https://github.com/pxiaccount/pxitimer.git
