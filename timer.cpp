@@ -79,17 +79,84 @@ int main() {
 
     int full = 60;
     if (seconds == 1) {
-      cout << sInt << ":" << "00";
-      for (int i=sInt;i>=0;i--) {
-	this_thread::sleep_for(std::chrono::milliseconds(1000));
-	full--;
-	cout << sInt << ":" << full;
+      cout << "00" << ":" << sInt << endl; 
+      for (int i=final_time+59;i>=0;i--) {
+	this_thread::sleep_for(chrono::milliseconds(1000));
+	sInt--;
+	if (sInt >= 10) {
+	  cout << "00" << ":" << sInt << endl;
+	}
+	if (sInt < 10) {
+	  cout << "00" <<  ":" << "0" << sInt << endl;
+	}
+	if (sInt == 0) {
+	  break;
+	}
       }
     } else if (minutes == 1) {
-      final_time = mInt * 60;
+      if ( mInt < 10) {
+	  cout << "0" << mInt << ":" << "00" << endl;
+	} else {
+	  cout << mInt << ":" << "00" << endl;
+	}
+      
+      for (int i=final_time+59;i>=0;i--) {
+	this_thread::sleep_for(chrono::milliseconds(1000));
+	full--;
+	if (full >= 10 && mInt >= 10) {
+	  cout << mInt-1 << ":" << full << endl;
+	}
+	if (full >= 10 && mInt < 10) {
+	  cout << "0" << mInt-1 << ":" << full << endl;
+	}
+	if (full < 10 && mInt < 10) {
+	  cout << "0" << mInt-1 << ":" << "0" << full << endl;
+	}
+	if (full == 0) {
+	  full = 60;
+	  mInt -= 1;
+	}
+	if (mInt == 0) {
+	  break;
+	}
+      }
     } else if (hours == 1) {
-      final_time = hInt * 60 * 60;
+      if ( hInt < 10) {
+	  cout << "0" << hInt << ":00:00" << endl;
+	} else {
+	  cout << hInt << ":00:00" << endl;
+	}
+      
+      for (int i=final_time+59;i>=0;i--) {
+	this_thread::sleep_for(chrono::milliseconds(1000));
+	full--;
+	if (full >= 10 && hInt >= 10) {
+	  cout << hInt-1 << ":" << full << endl;
+	}
+	if (full >= 10 && mInt < 10) {
+	  cout << "0" << mInt-1 << ":" << full << endl;
+	}
+	if (full < 10 && mInt < 10) {
+	  cout << "0" << mInt-1 << ":" << "0" << full << endl;
+	}
+	if (full == 0) {
+	  full = 60;
+	  mInt -= 1;
+	}
+	if (mInt == 0) {
+	  break;
+	}
+      }
     } else {
-      final_time = mInt * 60;
+      cout << mInt << ":" << "00";
+      for (int i=mInt;i>=0;i--) {
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
+	full--;
+	cout << mInt << ":" << full;
+	if (full == 0) {
+	  full = 60;
+	  mInt -= 1;
+	}
+      }
     }
 }
