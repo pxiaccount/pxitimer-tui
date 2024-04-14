@@ -3,6 +3,7 @@
 ## About
 pxitimer is a timer program which contains many functions (Functions are currently developing)
 ** This software may contains bugs. But I'll try to fix it as soon as possible
+** Press Ctrl + C to quit program
 
 ## Installation
 
