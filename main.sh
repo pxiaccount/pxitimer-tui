@@ -2,7 +2,9 @@
 
 g++ check.cpp -o check && ./check
 clear
+echo -e '\033[38;5;2m'
 echo "You can config more in ./custom folder"
+echo -e '\033[38;5;159m'
 config_time=`cat ./custom/time.txt`
 created=""
 if [ "$config_time" == "minutes" ]; then
