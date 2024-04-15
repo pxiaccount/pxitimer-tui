@@ -82,17 +82,21 @@ int main() {
     int min = 60;
     if (seconds == 1) {
       if (sInt > 10) {
+	system("clear");
 	cout << "00" << ":" << sInt << endl;
       } else {
+	system("clear");
 	cout << "00" << ":0" << sInt << endl;
       }
       for (int i=final_time+59;i>=0;i--) {
 	this_thread::sleep_for(chrono::milliseconds(1000));
 	sInt--;
 	if (sInt >= 10) {
+	  system("clear");
 	  cout << "00" << ":" << sInt << endl;
 	}
 	if (sInt < 10) {
+	  system("clear");
 	  cout << "00" <<  ":" << "0" << sInt << endl;
 	}
 	if (sInt == 0) {
@@ -101,8 +105,10 @@ int main() {
       }
     } else if (minutes == 1) {
       if ( mInt < 10) {
+	system("clear");
 	  cout << "0" << mInt << ":" << "00" << endl;
 	} else {
+	system("clear");
 	  cout << mInt << ":" << "00" << endl;
 	}
       
@@ -110,12 +116,15 @@ int main() {
 	this_thread::sleep_for(chrono::milliseconds(1000));
 	full -= 1;
 	if (full >= 10 && mInt >= 10) {
+	  system("clear");
 	  cout << mInt-1 << ":" << full << endl;
 	}
 	if (full >= 10 && mInt < 10) {
+	  system("clear");
 	  cout << "0" << mInt-1 << ":" << full << endl;
 	}
 	if (full < 10 && mInt < 10) {
+	  system("clear");
 	  cout << "0" << mInt-1 << ":" << "0" << full << endl;
 	}
 	if (full == 0) {
@@ -128,8 +137,10 @@ int main() {
       }
     } else if (hours == 1) {
       if ( hInt < 10) {
+	system("clear");
 	  cout << "0" << hInt << ":00:00" << endl;
 	} else {
+	system("clear");
 	  cout << hInt << ":00:00" << endl;
 	}
       
@@ -139,15 +150,19 @@ int main() {
 	full-=1;
 	
 	if (hInt > 10 && min >= 10 && full >= 10) {
+	  system("clear");
 	  cout << hInt-1 << ":" << min-1  << full << endl;
 	}
 	if (hInt <= 10 && full >= 10 && min > 10) {
+	  system("clear");
 	  cout << "0" << hInt-1 << ":" << min-1 << ":" << full << endl;
 	}
 	if (full < 10 && hInt <= 10 && min > 10) {
+	  system("clear");
 	  cout << "0" << hInt-1 << ":" << min-1 << ":0" << full << endl;
 	}
 	if (full < 10 && hInt < 10 && min <= 10 || min <= 10) {
+	  system("clear");
 	  cout << "0" << hInt-1 << ":0" << min-1 << ":0" << full << endl;
 	}
 	if (full == 0) {
@@ -164,8 +179,10 @@ int main() {
       }
     } else {
        if ( mInt < 10) {
+	 system("clear");
 	  cout << "0" << mInt << ":" << "00" << endl;
 	} else {
+	 system("clear");
 	  cout << mInt << ":" << "00" << endl;
 	}
       
@@ -173,12 +190,15 @@ int main() {
 	this_thread::sleep_for(chrono::milliseconds(1000));
 	full -= 1;
 	if (full >= 10 && mInt >= 10) {
+	  system("clear");
 	  cout << mInt-1 << ":" << full << endl;
 	}
 	if (full >= 10 && mInt < 10) {
+	  system("clear");
 	  cout << "0" << mInt-1 << ":" << full << endl;
 	}
 	if (full < 10 && mInt < 10) {
+	  system("clear");
 	  cout << "0" << mInt-1 << ":" << "0" << full << endl;
 	}
 	if (full == 0) {
