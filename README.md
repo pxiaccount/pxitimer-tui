@@ -1,8 +1,8 @@
 # pxitimer
 
 ## Screenshot
-[2024-04-16_12-55.png]
-[2024-04-16_12-55_1.png]
+![2024-04-16_12-55](https://github.com/pxiaccount/pxitimer/assets/122612391/9e70793c-8cf6-40b1-8343-43ba6bf102be)<br>
+![2024-04-16_12-55_1](https://github.com/pxiaccount/pxitimer/assets/122612391/97192469-cec8-47cf-b69f-66adcedac2f8)
 
 ## About
 pxitimer is a timer program which contains many functions (Functions are currently developing)
