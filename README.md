@@ -16,10 +16,10 @@ pxitimer is a timer program which contains many functions (Functions are current
 - Bash
 - git (Optionally)
 
-Links for dependencies information:
-GCC Compiler: https://gcc.gnu.org/
-Bash: https://www.gnu.org/software/bash/
-Git: https://git-scm.com/
+Links for dependencies information: <br>
+GCC Compiler: https://gcc.gnu.org/<br>
+Bash: https://www.gnu.org/software/bash/<br>
+Git: https://git-scm.com/<br>
 
 ##### Installation
 
