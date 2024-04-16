@@ -1,5 +1,9 @@
 # pxitimer
 
+## Screenshot
+[2024-04-16_12-55.png]
+[2024-04-16_12-55_1.png]
+
 ## About
 pxitimer is a timer program which contains many functions (Functions are currently developing)
 ** This software may contains bugs. But I'll try to fix it as soon as possible
