@@ -1,8 +1,12 @@
 # pxitimer
 
 ## Screenshot
-![2024-04-16_12-55](https://github.com/pxiaccount/pxitimer/assets/122612391/9e70793c-8cf6-40b1-8343-43ba6bf102be)<br>
-![2024-04-16_12-55_1](https://github.com/pxiaccount/pxitimer/assets/122612391/97192469-cec8-47cf-b69f-66adcedac2f8)
+![2024-04-17_09-08_2](https://github.com/pxiaccount/pxitimer/assets/122612391/e07168eb-d143-48a0-9528-cde413eacefb)
+![2024-04-17_09-08_1](https://github.com/pxiaccount/pxitimer/assets/122612391/a6247e2d-e0c5-4163-b1fa-6977f3b4ac58)
+![2024-04-17_09-08](https://github.com/pxiaccount/pxitimer/assets/122612391/c9ad5a2e-2b72-49fd-8a94-256413c15e6e)
+
+( Font in screenshots isn't include with a program )<br>
+( Font in screenshots is Inconsolata. You can download Inconsolata font from https://fonts.google.com/specimen/Inconsolata )<br>
 
 ## About
 pxitimer is a timer program which contains many functions (Functions are currently developing)
