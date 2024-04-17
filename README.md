@@ -1,9 +1,9 @@
 # pxitimer
 
 ## Screenshot
-![2024-04-17_09-08_2](https://github.com/pxiaccount/pxitimer/assets/122612391/e07168eb-d143-48a0-9528-cde413eacefb)
-![2024-04-17_09-08_1](https://github.com/pxiaccount/pxitimer/assets/122612391/a6247e2d-e0c5-4163-b1fa-6977f3b4ac58)
-![2024-04-17_09-08](https://github.com/pxiaccount/pxitimer/assets/122612391/c9ad5a2e-2b72-49fd-8a94-256413c15e6e)
+![2024-04-17_09-08](https://github.com/pxiaccount/pxitimer/assets/122612391/c9ad5a2e-2b72-49fd-8a94-256413c15e6e)<br>
+![2024-04-17_09-08_1](https://github.com/pxiaccount/pxitimer/assets/122612391/a6247e2d-e0c5-4163-b1fa-6977f3b4ac58)<br>
+![2024-04-17_09-08_2](https://github.com/pxiaccount/pxitimer/assets/122612391/e07168eb-d143-48a0-9528-cde413eacefb)<br>
 
 ( Font in screenshots isn't include with a program )<br>
 ( Font in screenshots is Inconsolata. You can download Inconsolata font from https://fonts.google.com/specimen/Inconsolata )<br>
