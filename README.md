@@ -1,4 +1,4 @@
-# pxitimer
+# pxitimer-tui
 
 ## Screenshot
 ![2024-04-17_09-08](https://github.com/pxiaccount/pxitimer/assets/122612391/c9ad5a2e-2b72-49fd-8a94-256413c15e6e)<br>
